@@ -102,20 +102,24 @@ h2, h3, p{
 /* Our story */
 .story {
 }
-.story_title_2 {
-  padding: 54px 0;
+.title_2 {
   text-transform: uppercase;
-  text-align: center;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 2.30625px;
 }
-.story_title_2::after {
+.story_title_2 {
+  padding: 54px 0;
+  text-align: center;
+}
+.title_2::after {
   content: "";
   width: 50px;
   height: 2px;
   background-color: #00A4E5;
   display: block;
+}
+.story_title_2::after {
   margin: 10px auto 0;
 }
 .story_inner {
@@ -135,7 +139,7 @@ h2, h3, p{
 .accent_color {
   color: #16ACE8;
 }
-.story_text {
+.text-p {
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.1875px;
@@ -165,4 +169,63 @@ h2, h3, p{
 .story_item:nth-child(3) {
   background-image: url(../img/we-build.png);
   margin-right: 0;
+}
+/* Our capabilities (service) */
+.services {
+}
+.services_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 77px;
+}
+.services_title_2{
+  margin-right: 117px;
+}
+.services_title_2::after {
+  margin-top: 10px;
+}
+.services_btn {
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00A4E5;
+  border: none;
+}
+.services_btn:hover {
+  cursor: pointer;
+}
+.services_bottom_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.services_item {
+  margin-bottom: 115px;
+  /* padding-left: 20px;
+  padding-top: 38px;
+  padding-bottom: 18px;
+  padding-right: 22px; */
+  padding: 38px 22px 18px 20px;
+  border: 1px solid #E6E6E6;
+}
+.item_img {
+  margin-bottom: 20px;
+}
+.item_h3 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.426667px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.top-p {
+  width: 405px;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
 }
