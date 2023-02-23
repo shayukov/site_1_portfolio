@@ -20,6 +20,11 @@ body {
 h2, h3, p{
   color: #48555B;
 }
+.text-h5 {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
 .wrap {
   max-width: 1440px;
   width: 100%;
@@ -61,11 +66,8 @@ h2, h3, p{
   margin-bottom: 223px;
 }
 .header-h5 {
-  color: #fff;
-  font-size: 11px;
   line-height: 13px;
   letter-spacing: 3.7px;
-  text-transform: uppercase;
   font-weight: 600;
 }
 /* meny */
@@ -77,8 +79,6 @@ h2, h3, p{
   justify-content: space-between;
   padding-top: 21px;
   padding-bottom: 23px;
-}
-.meny_logo {
 }
 .meny_item {
   list-style: none;
@@ -100,8 +100,6 @@ h2, h3, p{
   cursor: pointer;
 }
 /* Our story */
-.story {
-}
 .title_2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -218,7 +216,10 @@ h2, h3, p{
   line-height: 24px;
   letter-spacing: 0.426667px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+}
+.item_p {
+  margin-bottom: 18px;
 }
 .top-p {
   width: 405px;
@@ -227,12 +228,12 @@ h2, h3, p{
   letter-spacing: 0.2px;
   font-weight: 400;
 }
-/* раздел contact */
-.contact {
-  height: 499px;
+/* раздел get-in-touch */
+.get-in-touch {
+  height: 498px;
   background-image: url(../img/contact-bg.png);
 }
-.contact_h3 {
+.get-in-touch_h3 {
   font-size: 30px;
   letter-spacing: 0.15px;
   font-weight: bold;
@@ -240,10 +241,116 @@ h2, h3, p{
   width: 350px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 137px;
+  padding-top: 121px;
   margin-bottom: 35px;
 }
-.contact-btn {
+.get-in-touch_btn {
   display: block;
   margin: 0 auto;
+}
+/* Раздел newsletter signup */
+.signup {
+  background-color: #171819;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup_p {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: 0.846154px;
+  color: #fff;
+  margin-right: 70px;
+}
+.signup_input {
+  width: 250px;
+  height: 40px;
+  padding-left: 15px;
+}
+/* footer */
+.footer {
+}
+.footer_inner {
+  background-color: #141A20;
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.company {
+  width: 250px;
+}
+.company_h5 {
+  font-weight: 400;
+  letter-spacing: 0.846154px;
+  margin-bottom: 19px;
+}
+.footer_logo {
+  margin-bottom: 15px;
+}
+.footer_p {
+  color: #fff;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 400;
+  letter-spacing: 0.85px;
+}
+.links_h5 {
+  margin-bottom: 10px;
+}
+.links_item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+.links_list {
+  list-style: none;
+}
+.links_list li {
+  margin-bottom: 10px;
+}
+.links_list li:last-child{
+  margin-bottom: 0;
+}
+.contact {
+  margin-right: 6px;
+}
+.contact_h5 {
+  margin-bottom: 15px;
+}
+.contact_list {
+  list-style: none;
+  color: #fff;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.846154px;
+}
+.name_tel {
+  margin-bottom: 15px;
+}
+.socials {
+  padding-top: 25px;
+  margin-right: 26px;
+}
+.socials img {
+  margin-right: 25px;
+}
+.socials img:last-child {
+  margin-right: 0;
+}
+/* footer_copyright */
+.footer_copyright {
+  text-align: center;
+  background-color: #171819;
+  padding: 22px 0;
+}
+.footer_copyright p {
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.846154px;
+  font-weight: 400;
 }
