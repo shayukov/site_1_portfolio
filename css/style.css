@@ -40,10 +40,11 @@ h2, h3, p{
 .header {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
-  height: 768px;
   text-align: center;
   padding-top: 40px;
-  margin: 0 auto;
+  padding-bottom: 76px;
+  background-size: cover;
+  background-position: center center;
 }
 .header_logo {
   margin-bottom: 302px;
@@ -73,6 +74,9 @@ h2, h3, p{
 /* meny */
 .story, .meny, .services {
   background-color: #fff;
+}
+.meny {
+  border-bottom: 1px solid #E6E6E6;
 }
 .meny_flex {
   display: flex;
@@ -169,8 +173,6 @@ h2, h3, p{
   margin-right: 0;
 }
 /* Our capabilities (service) */
-.services {
-}
 .services_top {
   display: flex;
   justify-content: space-between;
@@ -230,8 +232,12 @@ h2, h3, p{
 }
 /* раздел get-in-touch */
 .get-in-touch {
-  height: 498px;
+  padding-top: 116px;
+  padding-bottom: 231px;
   background-image: url(../img/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .get-in-touch_h3 {
   font-size: 30px;
@@ -241,7 +247,6 @@ h2, h3, p{
   width: 350px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 121px;
   margin-bottom: 35px;
 }
 .get-in-touch_btn {
@@ -251,10 +256,10 @@ h2, h3, p{
 /* Раздел newsletter signup */
 .signup {
   background-color: #171819;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px 0;
 }
 .signup_p {
   font-size: 22px;
@@ -270,8 +275,6 @@ h2, h3, p{
   padding-left: 15px;
 }
 /* footer */
-.footer {
-}
 .footer_inner {
   background-color: #141A20;
   padding-top: 42px;
@@ -353,4 +356,48 @@ h2, h3, p{
   font-size: 11px;
   letter-spacing: 0.846154px;
   font-weight: 400;
+}
+/* медиа запросы для адаптивной вёрстке */
+@media (max-width: 990px) {
+  .story, .meny, .services, .footer_inner {
+    padding: 0 10px;
+  }
+  .story_inner {
+    display: block;
+  }
+  .story_left {
+    margin: 0 auto;
+  }
+  .story_right {
+    justify-content: center;
+  }
+  .left_p {
+    margin-bottom: 20px;
+  }
+  .services_top {
+    display: block;
+  }
+  .services_title_2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .services_title_2::after {
+    margin: 0 auto;
+  }
+  .top-p {
+    margin: 0 auto;
+  }
+  .services_btn {
+    position: relative;
+    left: 50%;
+  }
+  .services_bottom_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex-container {
+    display: block;
+  }
+  .links_item {
+    display: flex;
+  }
 }
